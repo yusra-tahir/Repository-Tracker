@@ -2,9 +2,8 @@ import React from 'react';
 
 const Footer = () => {
     return (
-        <footer className="mt-auto">
+        <footer className="mt-auto" id='theFooter'>
             <br/>
-            
             <div className="container justify-content-center">
                 <div className="row ">
                     <div className="col-sm-12 ">

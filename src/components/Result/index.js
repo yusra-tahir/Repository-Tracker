@@ -1,13 +1,12 @@
-import React from 'react';
-import './style.css';
+import React,{ useEffect } from 'react';
 
-export default function ({ result }) {
+export default function ({ result }) {    
     return (
         <section>
-            <div className="jumbotron text-center" id="title">
-                <h1 id="titleH1">{result.forks}</h1>
-                <br/>
-            </div>
+                 <div className="jumbotron text-center" id="title">
+                 <p>{result.name}</p>
+                 <br/>
+             </div>               
         </section>
     )
 }

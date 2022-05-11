@@ -13,10 +13,9 @@ const RepoPage = () => {
 
     let search = searchTerm => dispatch(getResult(searchTerm));
 
-    // auto loads London
-    useEffect(() => {
-        dispatch(getResult('WalkingZ3d'));
-    }, [])
+    // useEffect(() => {
+    //     dispatch(getResult('WalkingZ3d'));
+    // }, [])
 
     const renderResult = () => loading ? <p>Loading . . .</p> : <Result result={result}/>
 
@@ -25,7 +24,7 @@ const RepoPage = () => {
             Enter GitHub username below:
             <br/>
             <RepoSearch getResult={search}/>
-            <h1>{name.split(' ').map(l => l.charAt(0).toUpperCase() + l.slice(1)).join(' ')}</h1>
+            <h1></h1>
             { error ? <p role='alert'>{error}</p> : renderResult() }    
         </div>
     );
