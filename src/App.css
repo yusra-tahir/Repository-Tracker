@@ -119,44 +119,9 @@ body {
     color: #ffffff
 }
 
-.btn-outline-twitter {
-    border: 2px solid white;
-    color: white;
-    border-radius: 25px;
-}
-
-.btn-outline-twitter:hover {
-    background: #1ca1f1;
-    color: #ffffff;    
-    border-radius: 25px;
-}
-
-.btn-outline-linkedin {
-    border: 2px solid white;
-    color: white;
-    border-radius: 25px;
-}
-
-.btn-outline-linkedin:hover {
-    background: #0a66c2;
-    color: #ffffff;
-    border-radius: 25px;
-}
-
-.btn-outline-spotify {
-    border: 2px solid white;
-    color: white;
-    border-radius: 25px;
-}
-
-.btn-outline-spotify:hover {
-    background: #20d464;
-    color: #ffffff;
-    border-radius: 25px;
-}
 
 #socialButton {
-    margin-right: 10px;
+    margin: 30px;
 }
 
 #loremPara {

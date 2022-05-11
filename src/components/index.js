@@ -1,1 +1,2 @@
-export { default as TestComponent } from './TestComponent';
+export { default as RepoSearch } from './RepoSearch';
+export { default as Result } from './Result';

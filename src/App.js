@@ -1,6 +1,6 @@
 import React from "react";
 import {Routes, Route } from "react-router-dom";
-import {IndexPage, NotFoundPage, AboutPage } from "./pages";
+import {IndexPage, NotFoundPage, AboutPage, RepoPage } from "./pages";
 import {default as Layout} from "./layouts";
 import './App.css';
 
@@ -9,7 +9,8 @@ const App = () => {
         <Routes>
             <Route path="/" element={<Layout />}>
                 <Route path="/" element={<IndexPage />}/>   
-                <Route path="/about" element={<AboutPage />}/>           
+                <Route path="/about" element={<AboutPage />}/>    
+                <Route path="/repo" element={<RepoPage />}/>          
             </Route>   
             <Route path="/" element={<Layout />}>         
                 <Route path="*" element={<NotFoundPage />}/>
