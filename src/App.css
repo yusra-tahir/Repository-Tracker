@@ -1,6 +1,6 @@
 :root {
     --orange-color: #ff5900;
-    /* --orange-color: #159903; */
+    /* --orange-color: #00ff00; */
     --header-color: #000;
     --title-color: #21252b;
     --body-color: #282c34;
@@ -120,9 +120,20 @@ body {
     color: #ffffff
 }
 
+.btn-outline-linkedin {
+    border: 2px solid white;
+    color: white;
+    border-radius: 25px;
+}
+
+.btn-outline-linkedin:hover {
+    background: #0a66c2;
+    color: #ffffff;
+    border-radius: 25px;
+}
 
 #socialButton {
-    margin: 30px;
+    margin-right: 10px;
 }
 
 #loremPara {
@@ -204,7 +215,7 @@ body {
 
 #cardInfo {
     font-weight: bold;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 #cardSpan{
@@ -229,11 +240,12 @@ body {
 #cardSpanLink {
     text-decoration: none;
     font-weight: normal;
+    color: black;
 }
 
 #cardSpanLink:hover {
     color: var(--orange-color) !important;
-    text-decoration: none;
+    text-decoration: none !important;
 }
 
 #searchBtn {

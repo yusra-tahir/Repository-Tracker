@@ -16,7 +16,8 @@ const SearchPage = () => {
                 const {data} = await axios.get(`https://api.github.com/users/${searchString}/repos?sort=created`);
                 console.log("data: ", data[0].owner.login);
                 setRepoData(data);
-                document.getElementById('searchH2').textContent = `${data[0].owner.login}'s Repositories`;
+                document.getElementById('searchH2').textContent = `${data[0].owner.login}'s Public Repositories`;
+                document.getElementById('output').style.display = 'block';                
             } catch (err) {
                 console.error(err);
             }            
@@ -24,6 +25,7 @@ const SearchPage = () => {
         searchApi(submitValue); 
         } else {
             document.getElementById('searchH2').textContent = "Enter a valid GitHub username above to see their repositories";
+            document.getElementById('output').style.display = 'none';
         }    
 
     }, [submitValue]);
@@ -64,7 +66,7 @@ const SearchPage = () => {
             </div>
         </div>
             <div className="container-fluid justify-content-center text-center" id="xd">
-                <ul>{ renderRepos() }</ul>
+                <ul id='output'>{ renderRepos() }</ul>
             </div>
             </>
     )
